@@ -55,3 +55,44 @@ const transform5 = new Transform({
   scale: new Vector3(1, 1, 1)
 })
 entity4.addComponentOrReplace(transform5)
+
+const caribbeanWater = new Entity('caribbeanWater')
+engine.addEntity(caribbeanWater)
+caribbeanWater.setParent(_scene)
+const transform6 = new Transform({
+  position: new Vector3(8, 0, 8),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+caribbeanWater.addComponentOrReplace(transform6)
+const gltfShape2 = new GLTFShape("models/WaterPatchFull_01/WaterPatchFull_01.glb")
+gltfShape2.withCollisions = true
+gltfShape2.isPointerBlocker = true
+gltfShape2.visible = true
+caribbeanWater.addComponentOrReplace(gltfShape2)
+
+const floorCreamSmall = new Entity('floorCreamSmall')
+engine.addEntity(floorCreamSmall)
+floorCreamSmall.setParent(_scene)
+const transform7 = new Transform({
+  position: new Vector3(32, 0, 32),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(8, 1, 3.5)
+})
+floorCreamSmall.addComponentOrReplace(transform7)
+const gltfShape3 = new GLTFShape("models/CreamFloor_Small.glb")
+gltfShape3.withCollisions = true
+gltfShape3.isPointerBlocker = true
+gltfShape3.visible = true
+floorCreamSmall.addComponentOrReplace(gltfShape3)
+
+const floorCreamSmall2 = new Entity('floorCreamSmall2')
+engine.addEntity(floorCreamSmall2)
+floorCreamSmall2.setParent(_scene)
+floorCreamSmall2.addComponentOrReplace(gltfShape3)
+const transform8 = new Transform({
+  position: new Vector3(32, 0, 28),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(8, 1, 7)
+})
+floorCreamSmall2.addComponentOrReplace(transform8)
