@@ -3,7 +3,7 @@
     "title": "Solaro_scene_1",
     "favicon": "favicon_asset"
   },
-  "owner": "",
+  "owner": "0x322389A60d82255cB4A19B54f8D872f8356050Bd",
   "contact": {
     "name": "Roman",
     "email": ""
@@ -12,12 +12,12 @@
   "tags": [],
   "scene": {
     "parcels": [
-      "0,0",
-      "0,1",
-      "1,0",
-      "1,1"
+      "42,-15",
+      "42,-14",
+      "43,-15",
+      "43,-14"
     ],
-    "base": "0,0"
+    "base": "42,-15"
   },
   "communications": {
     "type": "webrtc",
